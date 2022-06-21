@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <%# El navbar debe contener la clase navbar-inverse y su estructura sólo debe contener 3
+  links donde cada uno llevará a la página correspondiente  (2 Puntos) %>
+    <nav class="navbar-inverse">
+      <%# <a href="/pages/one">ONE</a>
+      <a href="/pages/two">TWO</a>
+      <a href="/pages/three">Three</a> %>
+      <%= link_to "ONE", rutita_uno_path   %>
+      <%= link_to "TWO", pages_two_path   %>
+      <%= link_to "THREE", pages_three_path   %>
+      <a href="https://google.cl">google</a>
+    </nav>
+  
     <%= yield %>
   </body>
 </html>

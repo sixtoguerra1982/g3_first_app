@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/one'
+  get 'pages/one' , as: 'rutita_uno'
   get 'pages/two'
   get 'pages/three'
   root 'pages#one'
